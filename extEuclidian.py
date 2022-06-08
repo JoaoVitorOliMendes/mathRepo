@@ -1,7 +1,3 @@
-#numbersString = input('Digite os dois números a ser encontrado o inverso modular: ').split()
-#num1, num2 = int(numbersString[0]), int(numbersString[1])
-
-
 def extEuclidian(x, y):
 
     s = ti = 1
@@ -13,19 +9,10 @@ def extEuclidian(x, y):
 
         s, si = si, s - quo * si
         t, ti = ti, t - quo * ti
-        #x = mod
-    return s
+        x = mod
+    return s, x
 
-def decodificar(message, p, q, e):
-    n = (p-1) * (q-1)
-    d = extEuclidian(e, n)
-    while d < 0:
-        d += n
-    
-    return pow(message, d) % (p*q)
+messageString = input('Digite dois numeros: ').split()
+p, q = int(messageString[0]), int(messageString[1])
 
-messageString = int(input('Digite sua mensagem: '))
-constantsString = input('Agora digite p, q, e: ').split()
-p, q, e = int(constantsString[0]), int(constantsString[1]), int(constantsString[2])
-
-print(decodificar(messageString, p, q, e))
+print(extEuclidian(p, q))
