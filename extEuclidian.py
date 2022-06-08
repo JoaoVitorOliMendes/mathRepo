@@ -9,7 +9,7 @@ def extEuclidian(x, y):
 
         s, si = si, s - quo * si
         t, ti = ti, t - quo * ti
-    return s, x
+    return s, t, x
 
 messageString = input('Digite dois numeros: ').split()
 p, q = int(messageString[0]), int(messageString[1])
