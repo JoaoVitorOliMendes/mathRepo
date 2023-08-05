@@ -1,5 +1,5 @@
-# extEuclidian
-> Python script to calculate mdc, largest number coefficient and smallest number coefficient. Useful to encript messages using RSA
+# mathRepo
+> My take on math formulas, mostly python
 
 <i> * Necessário [Python-3.8](https://www.python.org/downloads/) e [Git](https://git-scm.com/downloads) </i>
 
@@ -9,8 +9,8 @@ App feito em
 ## Instalação
 
 ```sh
-git clone https://github.com/JoaoVitorOliMendes/extEuclidian.git
-cd extEuclidian
+git clone https://github.com/JoaoVitorOliMendes/mathRepo.git
+cd mathRepo
 ```
 
 ## Iniciar App
